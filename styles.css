@@ -1,0 +1,152 @@
+/* Reset and global styles */
+body,
+h1,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.heading {
+  font-size: 32px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.subheading {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Box */
+.box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(6px);
+}
+
+/* Footer */
+.footer {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bangers|Cinzel:400,700,900|Lato:100,300,400,700,900|Lobster|Lora:400,700|Mansalva|Muli:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Roboto:100,300,400,500,700,900&display=swap');
+
+/* Logo Container */
+.logo-container {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 60px 0;
+}
+
+/* Main Logo */
+.main-logo {
+  font-family: 'Bangers';
+  font-size: 96px;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.kire,
+.visual,
+.designers {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.main-logo:hover .kire,
+.main-logo:hover .visual,
+.main-logo:hover .designers {
+  opacity: 1;
+}
+
+/* Slogan */
+.slogan {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #666666;
+  margin-top: 20px;
+  animation: fade-in 1s ease-in-out infinite alternate;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
