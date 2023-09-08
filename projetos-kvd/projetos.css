@@ -26,6 +26,7 @@ h2 {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 /* Highlight */
@@ -154,8 +155,7 @@ nav ul li a:hover {
     margin-bottom: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a consistent box-shadow */
 }
-/* Box and Box-Img */
-.box-img,
+/* Box */
 .box {
     background-color: #f2f2f2;
     border: 1px solid #ccc;
@@ -240,13 +240,14 @@ nav ul li a:hover {
 
 /* Footer */
 .footer {
-    top: 0;
-    left: 0;
-    right: 0;
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .footer-text {
