@@ -40,13 +40,30 @@ a {
 
 /* Header */
 .container-header {
-  background-color: #333;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a consistent box-shadow */
   transition: transform 0.3s ease;
 }
 .container-header:hover {
   transform: translateY(5px);
+}
+
+.background-gradient {
+  background: linear-gradient(45deg, #df6666, #947ed4, #947ed4, #df7777, #df6666);
+  background-size: 200% 200%;
+  animation: gradientAnimation 40s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /* Fix the header at the top */
 header {
@@ -117,7 +134,6 @@ header {
 
 /* Footer */
 .footer {
-  background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -137,7 +153,6 @@ header {
 /* Logo Container */
 .logo-container {
   text-align: center;
-  background-color: #333;
 }
 
 /* Main Logo */
