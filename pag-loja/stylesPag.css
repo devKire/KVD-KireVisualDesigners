@@ -271,3 +271,11 @@ nav ul li a:hover {
 .footer-text {
     margin: 0;
 }
+
+.service-list {
+    margin-top: 50px;
+    font-size: 20px;
+}
+.service-list h3, li {
+    text-align: justify;
+}

@@ -34,8 +34,13 @@ a {
     background-size: 200% 200%;
     animation: gradientAnimation 40s linear infinite;
   }
+  .background-gradient2 {
+    background-image: linear-gradient(135deg, #766264 0, #67595b 16.67%, #585152 33.33%, #474747 50%, #373e3c 66.67%, #293531 83.33%, #1d2d26 100%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s linear infinite;
+  }
   
-  @keyframes gradientAnimation {
+  @keyframes gradientAnimation  {
     0% {
       background-position: 0% 50%;
     }
@@ -204,15 +209,56 @@ nav ul li a:hover {
 }
 
 .button:hover {
-    background-color: #45a049;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box-shadow on hover */
+    box-shadow: 10px 10px 50px 0 rgba( 31, 38, 135, 0.37 );
 }
 
-
-.grid-img {
+/* Estilos para os projetos */
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
+  }
+
+  .projeto {
+    background-color: #3f3f3f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .projeto h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .projeto-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projeto img {
+    width: 70%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .projeto p {
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align:center;
+  }
+
+  .projeto a{
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur( 50.5px );
+    -webkit-backdrop-filter: blur( 50.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
   .boxImg {
     padding: 20px;
@@ -230,6 +276,50 @@ nav ul li a:hover {
     margin-bottom: 10px;
   }
 
+  .boxImg h3 {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 5px 16px; /* Update the padding to match the submit button */
+    border: none;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;    
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+  .boxImg-logo {
+    padding: 20px;
+  }
+  
+  .boxImg-logo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .boxImg-logo img {
+    width: 50%;
+    border-radius: 5px;
+  }
+  .boxImg-logo h3 {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 5px 16px; /* Update the padding to match the submit button */
+    border: none;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;    
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+
+  .efeito-vidro {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 50.5px );
+    -webkit-backdrop-filter: blur( 50.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
 /* Fade-in animation */
 .fade-in {
     animation: fade 5s infinite;
