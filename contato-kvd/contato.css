@@ -238,6 +238,7 @@ nav ul li a:hover {
     text-align: center;
 }
 .contact input[type="text"],
+.contact input[type="email"], /* Adicione este seletor para estilizar campos de e-mail */
 .contact textarea {
     width: 100%;
     padding: 12px; /* Increase the padding for better input field appearance */
@@ -254,6 +255,7 @@ nav ul li a:hover {
 }
 /* Form input and textarea focus styles */
 .contact input[type="text"]:focus,
+.contact input[type="email"]:focus, /* Adicione este seletor para estilizar campos de e-mail ao receber foco */
 .contact textarea:focus {
     border-color: #45a049;
     outline: none;
@@ -279,6 +281,7 @@ nav ul li a:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add a subtle box-shadow on hover */
     transform: translateY(5px); 
 }
+
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 600px) {
